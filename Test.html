@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body>
+<script>
+  var result = {
+    "count": 20,
+    "start": 0,
+    "total": 30,
+    "subjects": [{
+      "rating": {"max": 10, "average": 4.7, "stars": "25", "min": 0},
+      "genres": ["\u559c\u5267", "\u52a8\u4f5c"],
+      "title": "\u94c1\u9053\u98de\u864e",
+      "casts": [{
+        "alt": "https:\/\/movie.douban.com\/celebrity\/1054531\/",
+        "avatars": {
+          "small": "https://img3.doubanio.com\/img\/celebrity\/small\/694.jpg",
+          "large": "https://img3.doubanio.com\/img\/celebrity\/large\/694.jpg",
+          "medium": "https://img3.doubanio.com\/img\/celebrity\/medium\/694.jpg"
+        },
+        "name": "\u6210\u9f99",
+        "id": "1054531"
+      }, {
+        "alt": "https:\/\/movie.douban.com\/celebrity\/1337445\/",
+        "avatars": {
+          "small": "https://img1.doubanio.com\/img\/celebrity\/small\/1405266144.28.jpg",
+          "large": "https://img1.doubanio.com\/img\/celebrity\/large\/1405266144.28.jpg",
+          "medium": "https://img1.doubanio.com\/img\/celebrity\/medium\/1405266144.28.jpg"
+        },
+        "name": "\u9ec4\u5b50\u97ec",
+        "id": "1337445"
+      }, {
+        "alt": "https:\/\/movie.douban.com\/celebrity\/1314544\/",
+        "avatars": {
+          "small": "https://img3.doubanio.com\/img\/celebrity\/small\/1444998211.72.jpg",
+          "large": "https://img3.doubanio.com\/img\/celebrity\/large\/1444998211.72.jpg",
+          "medium": "https://img3.doubanio.com\/img\/celebrity\/medium\/1444998211.72.jpg"
+        },
+        "name": "\u738b\u51ef",
+        "id": "1314544"
+      }],
+      "collect_count": 24358,
+      "original_title": "\u94c1\u9053\u98de\u864e",
+      "subtype": "movie",
+      "directors": [{
+        "alt": "https:\/\/movie.douban.com\/celebrity\/1274856\/",
+        "avatars": {
+          "small": "https://img3.doubanio.com\/img\/celebrity\/small\/20143.jpg",
+          "large": "https://img3.doubanio.com\/img\/celebrity\/large\/20143.jpg",
+          "medium": "https://img3.doubanio.com\/img\/celebrity\/medium\/20143.jpg"
+        },
+        "name": "\u4e01\u665f",
+        "id": "1274856"
+      }],
+      "year": "2016",
+      "images": {
+        "small": "https://img5.doubanio.com\/view\/movie_poster_cover\/ipst\/public\/p2404720316.jpg",
+        "large": "https://img5.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2404720316.jpg",
+        "medium": "https://img5.doubanio.com\/view\/movie_poster_cover\/spst\/public\/p2404720316.jpg"
+      },
+      "alt": "https:\/\/movie.douban.com\/subject\/26389069\/",
+      "id": "26389069"
+    }]
+  };
+  if (typeof result === 'string') {
+    result = JSON.parse(result);
+  }
+  console.log("-------> " + result.count+ " "+ result.subjects[0].title);
+</script>
+
+</body>
+</html>

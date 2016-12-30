@@ -1,0 +1,25 @@
+<ion-view view-title="首页">
+
+
+  <ion-content ng-init="getDayLists()">
+
+
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"
+                   refreshing-text="正在努力刷新 =￣ω￣=">
+    </ion-refresher>
+
+    <ion-list>
+      <ion-item ng-repeat="data in indexDatas"
+                class="item-thumbnail-left item-icon-right"
+                type="item-text-wrap"
+                href="#/tab/dash/{{data._id}}">
+        <img src={{data.pic}}>
+        <h2>{{data.title}}</h2>
+        <p>{{data.des}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+
+
+  </ion-content>
+</ion-view>

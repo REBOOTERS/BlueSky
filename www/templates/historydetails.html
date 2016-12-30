@@ -1,0 +1,10 @@
+<ion-view view-title="">
+  <ion-content ng-init="getDatas()">
+
+    <img height="300px" width="100%" src={{responseData.result[0].pic}}>
+
+    <h3 style="padding: 10px">{{responseData.result[0].title}}</h3>
+    <p style="font-style: normal;padding: 10px">{{responseData.result[0].content}}</p>
+
+  </ion-content>
+</ion-view>

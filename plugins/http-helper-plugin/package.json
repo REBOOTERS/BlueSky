@@ -1,0 +1,16 @@
+{
+  "name": "http-helper-plugin",
+  "version": "0.0.1",
+  "cordova": {
+    "id": "http-helper-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "Ionic",
+    "http"
+  ],
+  "author": "Ionic",
+  "license": "Apache 2.0"
+}

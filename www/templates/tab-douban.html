@@ -1,0 +1,37 @@
+<ion-view hide-nav-bar="true">
+
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">豆瓣电影</h1>
+  </ion-header-bar>
+  <ion-content class="padding">
+
+
+    <p>正在热映</p>
+    <div class="row row-wrap" ng-init="getInThreaters()">
+      <div class="col col-33" ng-repeat="chat in InTheaters | limitTo: 18">
+        <img src={{chat.images.medium}} class='img-responsive'/>
+        <h5>{{chat.title}}</h5>
+      </div>
+    </div>
+
+
+    <!--<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"-->
+    <!--refreshing-text="正在努力刷新 =￣ω￣=">-->
+    <!--</ion-refresher>-->
+    <!--<ion-list>-->
+    <!--<ion-item class="item-remove-animate item-thumbnail-left item-icon-right"-->
+    <!--ng-repeat="chat in chats"-->
+    <!--type="item-text-wrap"-->
+    <!--href="#/tab/chats/:{{chat.id}}">-->
+    <!--<img ng-src="{{chat.images.small}}">-->
+    <!--<h2><b>{{chat.title}}</b></h2>-->
+    <!--<p>导演:{{directors($index)}}</p>-->
+    <!--<p>主演:{{casts($index)}}</p>-->
+    <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+    <!--<ion-option-button class="button-assertive" ng-click="remove(chat)">-->
+    <!--Delete-->
+    <!--</ion-option-button>-->
+    <!--</ion-item>-->
+    <!--</ion-list>-->
+  </ion-content>
+</ion-view>

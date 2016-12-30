@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="http-helper-plugin"
+    version="0.0.1">
+    <name>HttpHelper</name><!-- 插件名称 -->
+    <description>Http Helper</description>
+    <license>Apache 2.0</license>
+    <keywords>Http</keywords>
+    <!-- android -->
+    <platform name="android">
+		<framework src="com.squareup.okhttp3:okhttp:3.4.1" />
+		<framework src="com.squareup.okio:okio:1.11.0" />
+
+        <js-module name="HttpHelper" src="www/httpHelper.js">
+            <clobbers target="HttpHelper" />
+        </js-module>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="HttpHelper">
+                <param name="android-package" value="com.rongrong.plugins.HttpHelper" />
+            </feature>
+        </config-file>
+
+		<source-file src="src/android/com/rongrong/plugins/HttpHelper.java" target-dir="src/com/rongrong/plugins" />
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET"/>
+        </config-file>
+    </platform>
+
+</plugin>

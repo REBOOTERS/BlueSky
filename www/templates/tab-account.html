@@ -1,0 +1,22 @@
+<ion-view view-title="Account">
+  <ion-content>
+
+
+
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"
+                   refreshing-text="正在努力刷新 =￣ω￣=">
+    </ion-refresher>
+    <ion-list>
+      <ion-item class="item-thumbnail-left"
+                ng-repeat="data in indexDatas"
+                type="item-text-wrap"
+                href="#/app/search/{{data._id}}">
+        <img src={{data.pic}}>
+        <h2>{{data.title}}</h2>
+        <p>{{data.des}}</p>
+      </ion-item>
+    </ion-list>
+
+
+  </ion-content>
+</ion-view>
