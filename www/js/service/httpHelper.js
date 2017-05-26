@@ -2,6 +2,7 @@
  * Http 请求辅助类
  */
 angular.module('starter.services').factory('httpService', function ($q) {
+
   var NO_PLUGIN = 'HttpHelper: Missing Plugin';
 
 

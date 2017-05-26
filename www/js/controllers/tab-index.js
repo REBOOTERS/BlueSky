@@ -47,7 +47,7 @@ angular.module('starter.controllers')
 
       var baseUrl = 'http://api.juheapi.com/japi/toh?v=1&month=' + month + '&day=' + day + '&key=6390b4fd7f3c137961cc7ee162a70bf5';
       var promise = httpService.getData(baseUrl);
-      promise.then(function (result) {
+        promise.then(function (result) {
         console.log("result is " + result);
 
         if (result === "") {
@@ -69,6 +69,7 @@ angular.module('starter.controllers')
 
     $scope.doRefresh = function () {
       $timeout(function () {
+        $scope.getDayLists();
         $scope.$broadcast('scroll.refreshComplete');
       }, 2000);
     };
